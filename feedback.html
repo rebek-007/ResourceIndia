@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="images/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body{
+        background-image: url(images/home-bg.jpg);
+        background-size: cover;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(70, 68, 68);
+        border-radius: 4px;
+        resize: vertical;
+      }
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgb(70, 68, 68);
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      input[type="submit"] {
+        background-color: rgb(37, 116, 161);
+        color: rgb(230, 221, 221);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
+         opacity: 100%;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+     .container {
+        border-radius: 8px;
+
+        padding: 70px;
+        text-align: center;
+      }
+
+      .col-25 {
+        float: left;
+        width: 35%;
+        margin-top: 6px;
+        text-align: center;
+        border-radius: 8px;
+        color: black;
+        font-weight: 300;
+      }
+
+      .col-75 {
+        float: left;
+        width: 35%;
+        margin-top: 6px;
+        text-align: center;
+        border-radius: 8px;
+      font-weight: 300;
+      color: black;
+
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        text-align: center;
+      }
+      .brand{
+          text-align: center;
+        color: rgb(115, 8, 187);
+        font-size:36px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .row :hover {
+        border-color: #180f97;
+        border-width: 1.5px;
+      }
+      .main {
+        text-align: center;
+      color: aliceblue;
+
+      font-weight: 200;
+      font-size: 17px;
+      }
+      .row {
+        text-align: center;
+        margin-left: 130px;
+      }
+
+      .logo img{
+          width: 66px;
+          height: 46px;
+          margin-left:10px ;
+      }
+
+    </style>
+  </head>
+
+
+  <body>
+    <div class="first"><u>
+    <h2 class="brand">FEEDBACK FORM</h2> </u>
+
+    <div class="container">
+      <div class="main">
+        <form>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="First name"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder=" Last name"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                id="email"
+                name="mailid"
+                placeholder="Enter your e-mail id"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25"></div>
+            <div class="col-75"></div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="feed_back">Feed Back</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Message"
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="row-1">
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  </body>
+</html>
